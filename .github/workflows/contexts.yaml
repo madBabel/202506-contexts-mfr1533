@@ -10,4 +10,4 @@ jobs:
             - name: Show Info
               run: |
                     echo "Nombre del evento: ${{ github.event_name }}"
-                    echo "Ref: ${{ github.base_ref}} "
+                    echo "Ref: ${{ github.ref_name }} "
