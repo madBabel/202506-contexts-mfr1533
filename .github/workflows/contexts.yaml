@@ -1,0 +1,13 @@
+name: Contexts.
+on:
+    push: 
+    workflow_dispatch: 
+
+jobs:
+    echo-data:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Show Info
+              run: |
+                    echo: "Nombre del evento: ${{ github.event_name }}"
+                    echo: "Ref: ${{ github.base_ref}} "
